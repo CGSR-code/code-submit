@@ -34,24 +34,6 @@ train_dataset = MultiSessionsGraph(f"./datasets/{args.dataset}", phrase='train')
 test_dataset = MultiSessionsGraph(f"./datasets/{args.dataset}", phrase='test')
 args.metrics = eval(args.metrics)
 
-
-# args. = {
-#     "item_num": 43097,  # item的最大序号  de:43097,37484,gowalla:29510
-#     "hidden_size": 110,
-#     "WGAT_heads": 6,
-#     "dropout": 0.6,
-#     "lr": 0.0009,
-#     "lr_decay": 0.1,
-#     "lr_decay_epoch": 3,
-#     "leaky_relu": 0.2,
-#     "reg": 1e-6,
-#     "batch_size": 20,
-#     "epoch": 10,
-#     "use_cuda": True,
-#     "metrics": [5, 10, 20]
-# }
-
-
 if torch.cuda.is_available() and args.use_cuda:
     device = torch.device("cuda")
 else:

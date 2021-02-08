@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on 11/12/2020
-@author: GCong
-"""
-
 import pickle
 import numpy as np
 import torch

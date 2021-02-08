@@ -12,6 +12,7 @@ You can download experiment data, and put them in the folder datasets/:
 
 ## Example to Run the Codes
 The code for data preprocessing can refer to [SR-GNN](https://github.com/CRIPAC-DIG/SR-GNN).
+
 Train and evaluate the model:
 ```
 python build_relation_graph.py --dataset=diginetica

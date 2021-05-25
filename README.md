@@ -29,6 +29,6 @@ We refer to:
 
 ## Appendix
 - Causality and correlation statistics on Gowalla and Amazon
-<img src="pics/Causality and correlation statistics.png" align="center" width="75%" style="margin: 0 auto">
+  <img src="pics/Causality and correlation statistics.png" align="center" width="75%" style="margin: 0 auto">
 - Hyper-parameter setups of baselines
-<img src="pics/Hyper-parameter setups of baselines.png" align="center" width="75%" style="margin: 0 auto">
+  <img src="pics/Hyper-parameter setups of baselines.png" align="center" width="75%" style="margin: 0 auto">

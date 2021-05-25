@@ -8,6 +8,7 @@ from torch_geometric.nn import GCNConv, GATConv, GatedGraphConv, SAGEConv
 import torch.nn.functional as F
 import torch.nn as nn
 
+
 class Embedding2Score(nn.Module):
     def __init__(self, hidden_size):
         super(Embedding2Score, self).__init__()

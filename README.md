@@ -26,3 +26,6 @@ The codes for baselines can be found at:
 We refer to:
  - [SR-GNN](https://github.com/CRIPAC-DIG/SR-GNN) for the proprocess.py in our repository
  - [FGNN](https://github.com/RuihongQiu/FGNN) for the WGAT
+
+## Appendix
+<img src="pics/DiasyRec.png" align="center" width="75%" style="margin: 0 auto">

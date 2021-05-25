@@ -28,4 +28,5 @@ We refer to:
  - [FGNN](https://github.com/RuihongQiu/FGNN) for the WGAT
 
 ## Appendix
-<img src="pics/DiasyRec.png" align="center" width="75%" style="margin: 0 auto">
+- Causality and correlation statistics on Gowalla and Amazon
+<img src="pics/Causality and correlation statistics.png" align="center" width="75%" style="margin: 0 auto">

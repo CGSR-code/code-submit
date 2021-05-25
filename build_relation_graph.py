@@ -8,7 +8,6 @@ from tqdm import tqdm
 from collections import defaultdict
 from torch_geometric.data import Data
 
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', default='diginetica', help='dataset name: diginetica/gowalla/amazon')
 args = parser.parse_args()

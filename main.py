@@ -3,7 +3,6 @@ import pickle
 import os
 import argparse
 import datetime
-
 from dataloader import MultiSessionsGraph
 from torch_geometric.data import DataLoader
 from model import CGSR

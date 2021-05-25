@@ -5,7 +5,6 @@ Created on July, 2018
 
 @author: Tangrizzly
 """
-
 import argparse
 import time
 import csv

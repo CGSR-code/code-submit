@@ -35,7 +35,7 @@ class MultiSessionsGraph(InMemoryDataset):
         tri_pair = defaultdict(int)
         out_degree_inv = defaultdict(int)
         in_degree_inv = defaultdict(int)
-        node_to_id = {}  # 映射字典
+        node_to_id = {}
         edge_attr_cause={}
         edge_attr_effect={}
         i = 0
@@ -69,7 +69,6 @@ class MultiSessionsGraph(InMemoryDataset):
             if G2.has_edge(path[0], path[2]) and G2.has_edge(path[1],path[0]) and G2.has_edge(path[1],path[2]):
                 backdoor_path.append(path)
 
-        #排除后门路径的影响
         for j,path in enumerate(backdoor_path):
             pair[str(path[0]) + '-' + str(path[2])]=pair[str(path[0]) + '-' + str(path[2])] - tri_pair[str(path[1]) + '-' + str(path[0]) + '-' + str(path[2])]
     
@@ -120,14 +119,14 @@ class MultiSessionsGraph(InMemoryDataset):
                             edge_attr.append(edge_attr_cause[key])
                             edge_attr_eff.append(edge_attr_effect[key])
                         else:
-                            edge_attr.append(1/(1+out_degree_inv[node_to_id[res_nodes[senders[i]]]]))#如果这条边不在train中
+                            edge_attr.append(1/(1+out_degree_inv[node_to_id[res_nodes[senders[i]]]]))
                             edge_attr_eff.append(1/(1+in_degree_inv[node_to_id[res_nodes[receivers[i]]]]))
                     edge_attr = torch.tensor(edge_attr,dtype=torch.float)
                     edge_attr_eff=torch.tensor(edge_attr_eff,dtype=torch.float)
             # senders=itemgetter(*senders)(nodes)
-            # receivers=itemgetter(*receivers)(nodes)##优化
+            # receivers=itemgetter(*receivers)(nodes)
             else:
-                edge_attr = torch.tensor([0.],dtype=torch.float)#如果序列中只有一个节点，令边的权重为0
+                edge_attr = torch.tensor([0.],dtype=torch.float)
                 edge_attr_eff=torch.tensor([0.],dtype=torch.float)
             if flag==1:
                 break

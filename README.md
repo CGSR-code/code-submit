@@ -31,6 +31,7 @@ We refer to:
 - Causality and correlation statistics on Gowalla and Amazon
   <img src="pics/Causality and correlation statistics.png" align="center" width="75%" style="margin: 0 auto">
 - Hyper-parameter setups of baselines
+  d
   | Method  | Datasets                            | Hyper-parameter setups                                       |
   | ------- | ----------------------------------- | :----------------------------------------------------------- |
   | GRU4Rec | Diginetica,Gowalla,Amazon           | GRU size=100, Batch size=32, Learning rate=0.2               |

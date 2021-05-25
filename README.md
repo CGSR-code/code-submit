@@ -31,4 +31,10 @@ We refer to:
 - Causality and correlation statistics on Gowalla and Amazon
   <img src="pics/Causality and correlation statistics.png" align="center" width="75%" style="margin: 0 auto">
 - Hyper-parameter setups of baselines
-  <img src="pics/Hyper-parameter setups of baselines.png" align="center" width="75%" style="margin: 0 auto">
+  | Method  | Datasets                            | Hyper-parameter setups                                       |
+  | ------- | ----------------------------------- | ------------------------------------------------------------ |
+  | GRU4Rec | Diginetica, Gowalla, Amazon         | GRU size=100, Batch size=32, Learning rate=0.2               |
+  | NARM    | Diginetica, Gowalla, Amazon         | Embedding dimension=50, Batch size=512, Learning rate=0.001  |
+  | SR-GNN  | Diginetica, Gowalla<br />Amazon     | Embedding dimension=100, Batch size=100, Learning rate=0.001, $L_2$ penalty=1e-5<br />Embedding dimension=170, Batch size=100, Learning rate=0.001, $L_2$ penalty=1e-5 |
+  | FGNN    | Diginetica, Gowalla<br />Amazon     | Embedding dimension=100, Batch size=100, Learning rate=0.001, $L_2$ penalty=1e-5<br />Embedding dimension=150, Batch size=100, Learning rate=0.001, $L_2$ penalty=1e-5 |
+  | LESSR   | Diginetica<br />Gowalla<br />Amazon | Embedding dimension=32, Batch size=512, Learning rate=0.001, $L_2$ penalty=1e-4<br />Embedding dimension=64, Batch size=512, Learning rate=0.001, $L_2$ penalty=1e-4<br />Embedding dimension=128, Batch size=512, Learning rate=0.001, $L_2$ penalty=1e-4 |

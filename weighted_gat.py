@@ -154,5 +154,3 @@ def add_self_loops_partial(device,edge_index, edge_weight=None, fill_value=1., n
     edge_weight = torch.cat([edge_weight, loop_weight], dim=0)
     assert edge_index.shape[-1] == edge_weight.shape[0]
     return edge_index, edge_weight
-
-#%%
